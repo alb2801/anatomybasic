@@ -71,8 +71,38 @@ public class apuntar : MonoBehaviour
                 {
                     Debug.Log("¡Impacto en el antebrazo derecho!");
                 }
-                
-                // Agrega más condiciones para otras partes del cuerpo
+                else if (hit.transform.name.Contains("Brazo_derecho"))
+                {
+                    Debug.Log("¡Impacto en el brazo derecho!");
+                }
+                else if (hit.transform.name.Contains("Mano_izquierda"))
+                {
+                    Debug.Log("¡Impacto en el mano izquierda!");
+                }
+                else if (hit.transform.name.Contains("Antebrazo_izquierdo"))
+                {
+                    Debug.Log("¡Impacto en el antebrazo izquierdo!");
+                }
+                else if (hit.transform.name.Contains("Brazo_izquierdo"))
+                {
+                    Debug.Log("¡Impacto en el brazo izquierdo!");
+                }
+                else if (hit.transform.name.Contains("Abdomen"))
+                {
+                    Debug.Log("¡Impacto en el abdomen!");
+                }
+                else if (hit.transform.name.Contains("Torax"))
+                {
+                    Debug.Log("¡Impacto en el tórax!");
+                }
+                else if (hit.transform.name.Contains("Espalda"))
+                {
+                    Debug.Log("¡Impacto en la espalda!");
+                }
+                else if (hit.transform.name.Contains("Cuello"))
+                {
+                    Debug.Log("¡Impacto en el cuello!");
+                }
             }
         }
     }
