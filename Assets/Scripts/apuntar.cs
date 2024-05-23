@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class apuntar : MonoBehaviour
 {
     public Camera playerCamera; // Referencia a la cámara del jugador
     public float maxShootDistance = 100f; // Distancia máxima de disparo
     // Start is called before the first frame update
+    public TMP_Text impactText; // Referencia al objeto Text
     void Start()
     {
         
@@ -33,75 +35,75 @@ public class apuntar : MonoBehaviour
                 // Verifica qué parte del cuerpo fue impactada
                 if (hit.transform.name.Contains("Cabeza"))
                 {
-                    Debug.Log("¡Impacto en la cabeza!");
+                    impactText.text = "Cabeza";
                 }
                 else if (hit.transform.name.Contains("Pie_derecho"))
                 {
-                    Debug.Log("¡Impacto en el pie derecho!");
+                    impactText.text = "Pie derecho";
                 }
                 else if (hit.transform.name.Contains("Pie_izquierdo"))
                 {
-                    Debug.Log("¡Impacto en el pie izquierdo!");
+                    impactText.text = "Pie izquierdo";
                 }
                 else if (hit.transform.name.Contains("Pierna_derecha"))
                 {
-                    Debug.Log("¡Impacto en el pierna derecha!");
+                    impactText.text = "Pierna derecha";
                 }
                 else if (hit.transform.name.Contains("Pierna_izquierda"))
                 {
-                    Debug.Log("¡Impacto en el pierna izquierda!");
+                    impactText.text = "Pierna izquierda";
                 }
                 else if (hit.transform.name.Contains("Muslo_derecho"))
                 {
-                    Debug.Log("¡Impacto en el muslo derecho!");
+                    impactText.text = "Muslo derecho";
                 }
                 else if (hit.transform.name.Contains("Muslo_izquierdo"))
                 {
-                    Debug.Log("¡Impacto en el muslo izquierdo!");
+                    impactText.text = "Muslo Izquierdo";
                 }
                 else if (hit.transform.name.Contains("Gluteos"))
                 {
-                    Debug.Log("¡Impacto en los gluteos!");
+                    impactText.text = "Gluteos";
                 }
                 else if (hit.transform.name.Contains("Mano_derecha"))
                 {
-                    Debug.Log("¡Impacto en el mano derecha!");
+                    impactText.text = "Mano derecha";
                 }
                 else if (hit.transform.name.Contains("Antebrazo_derecho"))
                 {
-                    Debug.Log("¡Impacto en el antebrazo derecho!");
+                    impactText.text = "Antebrazo derecho";
                 }
                 else if (hit.transform.name.Contains("Brazo_derecho"))
                 {
-                    Debug.Log("¡Impacto en el brazo derecho!");
+                    impactText.text = "Brazo derecho";
                 }
                 else if (hit.transform.name.Contains("Mano_izquierda"))
                 {
-                    Debug.Log("¡Impacto en el mano izquierda!");
+                    impactText.text = "Mano izquierda";
                 }
                 else if (hit.transform.name.Contains("Antebrazo_izquierdo"))
                 {
-                    Debug.Log("¡Impacto en el antebrazo izquierdo!");
+                    impactText.text = "Antebrazo izquierdo";
                 }
                 else if (hit.transform.name.Contains("Brazo_izquierdo"))
                 {
-                    Debug.Log("¡Impacto en el brazo izquierdo!");
+                    impactText.text = "Brazo izquierdo";
                 }
                 else if (hit.transform.name.Contains("Abdomen"))
                 {
-                    Debug.Log("¡Impacto en el abdomen!");
+                    impactText.text = "Abdomen";
                 }
                 else if (hit.transform.name.Contains("Torax"))
                 {
-                    Debug.Log("¡Impacto en el tórax!");
+                    impactText.text = "Torax";
                 }
                 else if (hit.transform.name.Contains("Espalda"))
                 {
-                    Debug.Log("¡Impacto en la espalda!");
+                    impactText.text = "Espalda";
                 }
                 else if (hit.transform.name.Contains("Cuello"))
                 {
-                    Debug.Log("¡Impacto en el cuello!");
+                    impactText.text = "Cuello";
                 }
             }
         }
